@@ -30,7 +30,6 @@ nav li a:hover {
 nav li a:active {
     background-color: rgb(42, 42, 42);
 }
-
 fieldset{
     border-radius: 20px;
     background-color: rgb(34, 34, 34);
