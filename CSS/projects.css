@@ -32,6 +32,7 @@ li a:active {
 	border-style: solid;
     display: inline-block;
     border-radius: 25px;
+	border-color: black;
 }
 
 .text{

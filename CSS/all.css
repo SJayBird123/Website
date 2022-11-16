@@ -40,8 +40,9 @@ fieldset{
     border-radius: 20px;
     background-color: rgb(34, 34, 34);
     border: none;
+    color: white;
 }
 
 h2{
-    color: white;
+    
 }
