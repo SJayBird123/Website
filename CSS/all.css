@@ -9,6 +9,10 @@ body{
 
 nav{
     text-align: left;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 500;
 }
 nav ul {
     list-style-type: none;
