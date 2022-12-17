@@ -45,4 +45,10 @@ fieldset{
     background-color: rgb(34, 34, 34);
     border: none;
     color: white;
+    margin: auto;
+}
+
+.ninety {
+    max-width: 95%;
+    margin: auto;
 }

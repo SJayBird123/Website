@@ -25,27 +25,28 @@ li a:active {
 
 .gamelinkclass{
 	width: 22%;
-	height: 229px;
+	height: 227px;
 	box-sizing: border-box;
 	background-color: white;
 	margin: 1.2%;
 	border-style: solid;
     display: inline-block;
-    border-radius: 25px;
+    border-radius: 20px;
 	border-color: black;
+	overflow: hidden;
 }
 
 .text{
 	margin: auto;
 	width: 96%;
 	position: relative;
-	top: -20px;
+	top: -18px;
 	text-align: left;
 }
 
 h3{
 	font-size: 18px;
-	color: black;
+	color: rgb(42, 42, 42);
 	text-decoration: none;
 }
 
@@ -60,7 +61,7 @@ p{
 }
 
 img{
-	width: 90%;
+	width: 100%;
 }
 
 a{
