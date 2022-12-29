@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../../CSS/all.css">
+    <link rel="stylesheet" href="../../../CSS/projectPage.css">
+
+    <title>Saiarun Jayanthi</title>
+
+    <style>
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+	<li><a href="../../../index.html">Home</a></li>
+	<li><a href="../../../projects.html">Projects</a></li>  
+	<li><a href="">Contact</a></li>
+	<li><a href="">About</a></li>
+    </ul>
+</nav>
+    
+<br><br><br>
+    
+<fieldset>
+    <h2>MOE365 First Robotics Competition Scouting App</h2>
+</fieldset>
+
+<br>
+<fieldset>
+    <div  class = "ninety">
+        <p class = "date">Winter & Summer 2022</p>
+
+        <br><br>
+
+        <div class="slideshow">
+            <div class="slide">
+              <img src="slideshow/0.png">
+              Part of the Main class. The app was developed in InteliJ and can be run from a .jar file
+            </div>
+            
+            <div class="slide">
+              <img src="slideshow/1.png">
+              The popups where you select the desired competition and save location
+            </div>
+            
+            <div class="slide">
+              <img src="slideshow/2.png">
+              The Summary Sheet for the 2022pahat event, including various scoring data for every team
+            </div>
+            
+            <div class="slide">
+              <img src="slideshow/3.png">
+              Team specific breakdowns for each qualification match of the event
+            </div>
+            
+            <a class="previous" onclick="slideshow(-1)">❮</a>
+            <a class="next" onclick="slideshow(1)">❯</a>   
+        </div>
+            
+        <script>
+            var slideIndex = 0;
+            var slides = document.getElementsByClassName("slide");
+            slideshow(0);
+                                    
+            function slideshow(offset) {
+                slideIndex+=offset;
+                
+                if(slideIndex<0){
+                    slideIndex = slides.length-1;
+                }else{
+                    slideIndex = slideIndex%slides.length;
+                }
+
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+
+                slides[slideIndex].style.display = "block";  
+            }
+        </script>
+
+
+        <p> I made this website to showcase some of the projects I have made over the years.</p>
+    </div>
+</fieldset>
+
+<br>
+<fieldset>
+    <p></p>
+</fieldset>
+<br>
+
+</body>
+</html>
