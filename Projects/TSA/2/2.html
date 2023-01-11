@@ -10,6 +10,9 @@
     <style>
 
     </style>
+
+    
+    <link rel="stylesheet" href="TemplateData/style.css">
 </head>
 <body>
 
@@ -34,7 +37,21 @@
         <p class = "date">Winter 2021</p>
         <br><br>
         
-        <iframe src="https://pandaguy123.itch.io/tsa-game-2021"></iframe>
+
+        <script src="TemplateData/UnityProgress.js"></script>
+        <script src="Build/UnityLoader.js"></script>
+        <script>var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Builds.json", {onProgress: UnityProgress});</script>
+
+        <div style="position: relative;">
+        <div class="webgl-content">
+            <div id="unityContainer" style="width: 960px; height: 600px"></div>
+            <div class="footer">
+                <div class="webgl-logo"></div>
+                <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+            </div>
+        </div>
+        </div>
+
 
         <p>This game is for the TSA Video Game Design event in 2021. “The Great Escape” follows scientist Frank N. Stein
              and his journey to retrieve his mythical monsters. Be sure to play fullscreen.  
