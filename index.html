@@ -27,18 +27,68 @@
 <fieldset>
     <div class="ninety">
         <h2>Welcome to my site!</h2>
-        <p style = "float: left;">The site is still under construction. </p>
+
+
+        <div class="slideshow">
+            <div class="slide">
+              <img src="Home/Slideshow/0.jpg">
+              My chess trophy collection
+            </div>
+            
+            <div class="slide">
+              <img src="https://www.uschess.org/datapage/ratings_graphR.php?memid=14866797">
+              My chess rating over time
+            </div>
+            
+            <div class="slide">
+              <img src="Home/Slideshow//2.png">
+              Testing our Adapted Power Wheels with our client and her special needs student
+            </div>
+            
+            <div class="slide">
+              <img src="Home/Slideshow//3.jpg">
+              My robotics team, MOE365, accepting the Ford Autonomous Award at District Championships
+            </div>
+            
+            <a class="previous" onclick="slideshow(-1)">❮</a>
+            <a class="next" onclick="slideshow(1)">❯</a>   
+        </div>
+        <br>
+
+        <script>
+            var slideIndex = 0;
+            var slides = document.getElementsByClassName("slide");
+            slideshow(0);
+                                    
+            function slideshow(offset) {
+                slideIndex+=offset;
+                
+                if(slideIndex<0){
+                    slideIndex = slides.length-1;
+                }else{
+                    slideIndex = slideIndex%slides.length;
+                }
+
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+
+                slides[slideIndex].style.display = "block";  
+            }
+            
+            setInterval(function() {
+                slideshow(1);
+            }, 7000);
+
+        </script>
+
     </div>
+
+    <p style = "float: left;"> My name is Saiarun Jayanthi. Over the years, I've taken on dozens of programming projects: some good, some bad, and some outright embarrassing. I made this website to showcase a small selection of them. Enjoy! </p>
+
 </fieldset>
 <br>
 
-<fieldset>
-    <div class="ninety">
-        <h2>Info</h2>
-        <p style = "float: left;">My name is Saiarun Jayanthi. I made this site to showcase some of my projects.  </p>
-    </div>
-</fieldset>
-<br>
 
 <fieldset>
     <div class="ninety">

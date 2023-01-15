@@ -1,0 +1,40 @@
+
+.slideshow{
+    width: 60%;
+    margin : 0 auto;
+    position: relative;  
+}
+
+.previous, .next {
+    position: absolute;
+    top: 50%;
+    padding: 18px;
+    margin-top: -48px;
+    color: white;
+    background-color: #66806D;
+    font-weight: bold;
+    font-size: 28px;
+    user-select: none;
+    opacity: 80%;
+}
+
+.previous {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.previous:hover, .next:hover {
+    background-color: #598063;
+    opacity: 90%;
+}
+
+.slide img{
+    width: 100%;
+}
+
+.slide{
+    font-style: italic;
+}
