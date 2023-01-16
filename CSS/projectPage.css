@@ -51,3 +51,7 @@ a {
 .slide{
     font-style: italic;
 }
+
+p{
+    text-align: left;
+}
