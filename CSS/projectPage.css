@@ -1,0 +1,57 @@
+.date {
+    float: right;
+}
+
+
+iframe{
+    width: 100%; 
+    height: 600px;
+    border: 0px;
+}
+
+a {
+    color: white;
+}
+
+.slideshow{
+    position: relative;  
+}
+
+.previous, .next {
+    position: absolute;
+    top: 50%;
+    padding: 24px;
+    margin-top: -48px;
+    color: white;
+    background-color: #66806D;
+    font-weight: bold;
+    font-size: 28px;
+    user-select: none;
+    opacity: 80%;
+}
+
+.previous {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.previous:hover, .next:hover {
+    background-color: #598063;
+    opacity: 90%;
+}
+
+.slide img{
+    height: 600px;
+}
+
+.slide{
+    font-style: italic;
+}
+
+p{
+	font-size: 19px;
+    text-align: left;
+}
