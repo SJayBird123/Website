@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../../CSS/all.css">
+    <link rel="stylesheet" href="../../../CSS/projectPage.css">
+
+    <title>Saiarun Jayanthi</title>
+
+    <style>
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+	<li><a href="../../../index.html">Home</a></li>
+	<li><a href="../../../projects.html">Projects</a></li> 
+    </ul>
+</nav>
+    
+<br><br><br>
+    
+<fieldset>
+    <h2>MOE365 First Robotics Competition Scouting App</h2>
+</fieldset>
+
+<br>
+<fieldset>
+    <div  class = "ninety">
+        <p class = "date">Winter & Summer 2022</p>
+
+        <br><br>
+
+        <div class="slideshow">
+            <div class="slide">
+              <img src="slideshow/0.png">
+              Part of the Main class. The app was developed in InteliJ and can be run from a .jar file
+            </div>
+            
+            <div class="slide">
+              <img src="slideshow/1.png">
+              The popups where you select the desired competition and save location
+            </div>
+            
+            <div class="slide">
+              <img src="slideshow/2.png">
+              The Summary Sheet for the 2022pahat event, including various scoring data for every team
+            </div>
+            
+            <div class="slide">
+              <img src="slideshow/3.png">
+              Team-specific breakdowns for my team, 365, for each qualification match of the event
+            </div>
+            
+            <a class="previous" onclick="slideshow(-1)">❮</a>
+            <a class="next" onclick="slideshow(1)">❯</a>   
+        </div>
+            
+        <script>
+            var slideIndex = 0;
+            var slides = document.getElementsByClassName("slide");
+            slideshow(0);
+                                    
+            function slideshow(offset) {
+                slideIndex+=offset;
+                
+                if(slideIndex<0){
+                    slideIndex = slides.length-1;
+                }else{
+                    slideIndex = slideIndex%slides.length;
+                }
+
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+
+                slides[slideIndex].style.display = "block";  
+            }
+        </script>
+
+        <p>
+            PURPOSE:  To calculate/generate various important metrics for First Robotics Competition scouting
+            <br><br>
+            HOW TO: Run the jar file. Select the year, country, and event you want to scout for. The app generates an xlsx file, and you choose where to save it. Open the file, and it will have a summary sheet with data for every team and team-specific qualification match breakdowns in subsequent sheets. 
+            <br><br>
+            DESCRIPTION: I made this during the 2022 FRC season. At the time, no websites or programs that could conveniently display scouting data existed. The closest alternative was a website that took several minutes to load similar data, making it very difficult to use at competitions. This app simplifies the process, enabling users to run the program locally. During the 2022 Offseason, I further improved the program. The app starts by prompting the user for a year. All events from the selected year are parsed for every country that hosted an event. The user is prompted to pick a country. The user is prompted to pick an event from all events in the selected country and year. All matches from the event are stored and parsed for team names. The matches are broken down for all relevant data and stored in robot, alliance, and match data formats. Scoring data is used to determine the various OPRs and averages, data that is used as a predictive/advisory metric. That data is organized in a summary sheet by team numbers. There are individual team sheets that display individual match data. This is stored to a file in a location selected in a prompt by the user. A rerun prompt is shown to ask whether or not the user wants to rerun the program to choose another competition.
+            <br><br>
+            TOOLS: Java
+            <br><br>
+            LINKS: <a target = "_blank" href = "https://github.com/SJayBird123/ScoutingRedo">GitHub Link</a>
+        </p>
+    </div>
+</fieldset>
+
+<br>
+<fieldset>
+    <p></p>
+</fieldset>
+<br>
+
+</body>
+</html>
