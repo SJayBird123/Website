@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../../../CSS/all.css">
+    <link rel="stylesheet" href="../../../../CSS/projectPage.css">
+
+    <title>Saiarun Jayanthi</title>
+
+    <style>
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+	<li><a href="../../../../index.html">Home</a></li>
+	<li><a href="../../../../projects.html">Projects</a></li>  
+    </ul>
+</nav>
+    
+<br><br><br>
+    
+<fieldset>
+    <h2>Event-Based Sensing Project: Software Engineering Intern, TRX Systems</h2>
+</fieldset>
+
+<br>
+<fieldset>
+    <div  class = "ninety">
+        <p class = "date">Summer 2025</p> <br><br><br><br>
+
+        <div class="slideshow">
+            <div class="slide">
+              <img src="slideshow/Logo_Device.png">
+              <br>TRX Systems DAPS, the U.S. Army's handheld Position, Navigation, and Timing tool.
+            </div>
+
+            <div class="slide">
+              <img src="slideshow/events.gif">
+              <br>A model of event-based sensing. Unlike frame-based cameras, event cameras capture relative light intensity, not complete images.
+            </div>
+            
+            <div class="slide">
+              <img src="slideshow/Prophesee_GenX320.png">
+              <br>The GenX320 Event Camera and EVK3 test board.
+            </div>
+            
+            <div class="slide">
+              <img src="slideshow/EventCameraDataset.jpg">
+              <br>A sample dataset from a paper I investigated. Unfortunately I am unable to present any direct samples of my work.
+            </div>
+            
+            <a class="previous" onclick="slideshow(-1)">❮</a>
+            <a class="next" onclick="slideshow(1)">❯</a>   
+        </div>
+            
+        <script>
+            var slideIndex = 0;
+            var slides = document.getElementsByClassName("slide");
+            slideshow(0);
+                                    
+            function slideshow(offset) {
+                slideIndex+=offset;
+                
+                if(slideIndex<0){
+                    slideIndex = slides.length-1;
+                }else{
+                    slideIndex = slideIndex%slides.length;
+                }
+
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+
+                slides[slideIndex].style.display = "block";  
+            }
+        </script>
+        
+        <p>
+            DESCRIPTION: I worked at TRX Systems during the Summer of 2025 as their Software Engineering Intern. I worked with several computing and sensing technologies, but my primary objective was using an Event-Based Camera for pose estimation, particularly in the context of GPS-denied/emission-free sensing for vehicle movement in low-light scenarios.
+            <br>My initial prototypes resembled a computer mouse (using similar xy-translation principles), but the demands of the challenge and field-testing required developing more sophisticated algorithms and physical testbenches, ultimately succeeding at generating speed estimations during road testing. 
+            <br><br>
+            TOOLS: Python, Linux, CAD, C++, Prophesee GenX320, MicroPython
+            <br><br>
+            LINKS: <a target = "_blank" href = "https://ieeexplore.ieee.org/document/9138762">Event Sensing Survey Paper</a>
+        </p>
+
+    </div>
+</fieldset>
+
+<br>
+<fieldset>
+    <p></p>
+</fieldset>
+<br>
+
+</body>
+</html>
+

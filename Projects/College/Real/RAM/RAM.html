@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../../../CSS/all.css">
+    <link rel="stylesheet" href="../../../../CSS/projectPage.css">
+
+    <title>Saiarun Jayanthi</title>
+
+    <style>
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+	<li><a href="../../../../index.html">Home</a></li>
+	<li><a href="../../../../projects.html">Projects</a></li>  
+    </ul>
+</nav>
+    
+<br><br><br>
+    
+<fieldset>
+    <h2>Robotics at Maryland, Testudog Team</h2>
+</fieldset>
+
+<br>
+<fieldset>
+    <div  class = "ninety">
+
+        <div class="slideshow">
+            <div class="slide">
+              <img src="slideshow/testudog.jpg">
+              <br>
+            </div>
+            
+            <div class="slide">
+              <img src="slideshow/team.jpeg">
+              <br>
+            </div>
+
+            <a class="previous" onclick="slideshow(-1)">❮</a>
+            <a class="next" onclick="slideshow(1)">❯</a>   
+        </div>
+            
+        <script>
+            var slideIndex = 0;
+            var slides = document.getElementsByClassName("slide");
+            slideshow(0);
+                                    
+            function slideshow(offset) {
+                slideIndex+=offset;
+                
+                if(slideIndex<0){
+                    slideIndex = slides.length-1;
+                }else{
+                    slideIndex = slideIndex%slides.length;
+                }
+
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+
+                slides[slideIndex].style.display = "block";  
+            }
+        </script>
+        
+        <p>
+            Robotics at Maryland is the University of Maryland's premier student-led robotics organization. Our three projects are Qubo, the Autonomous Submarine, Testudog, the Quadruped Dog, and Terry, the Mars Rover. 
+            <br>
+            I joined Qubo in my freshman year, but am now both a part of Testudog and leadership, as the Testudog Business Associate and Vision Lead. As a member of software, I have been assisting our controls subproject with developing our sensing platforms for navigation. Presently, our system is a sensor fusion of IMUs, LiDar, and Stereo Cameras.
+            <br>
+            We are preparing to compete at the IEEE ICRA Legged Robot Challenges in Vienna, Austria this summer. This challenge requires autonomously navigating an obstacle course with three levels of difficulty. 
+            <br><br>
+            TOOLS: Python, Linux, CAD, C++, Nvidia Jetson Orin, Oak-D S2 Stereo Camera, Unitree Lidar L2
+            <br><br>
+            LINKS: <a target = "_blank" href = "https://robotics-at-maryland.pages.umd.edu/">R@M Team Website</a>
+        </p>
+
+    </div>
+</fieldset>
+
+<br>
+<fieldset>
+    <p></p>
+</fieldset>
+<br>
+
+</body>
+</html>
+
