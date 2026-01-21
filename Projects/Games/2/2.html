@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../../CSS/all.css">
+    <link rel="stylesheet" href="../../../CSS/projectPage.css">
+
+    <title>Saiarun Jayanthi</title>
+
+    <style>
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+	<li><a href="../../../index.html">Home</a></li>
+	<li><a href="../../../projects.html">Projects</a></li>  
+	<li><a href="">Contact</a></li>
+	<li><a href="">About</a></li>
+    </ul>
+</nav>
+    
+<br><br><br>
+    
+<fieldset>
+    <h2>Space Bear Romance</h2>
+</fieldset>
+
+<br>
+<fieldset>
+    <div  class = "ninety">
+        <p class = "date">Fall 2020</p>
+        <br><br>
+
+        <script src="TemplateData/UnityProgress.js"></script>
+        <script src="Build/UnityLoader.js"></script>
+        <script>var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Final.json", {onProgress: UnityProgress});</script>
+
+        <div class="webgl-content">
+            <div id="unityContainer" style="width: 960px; height: 600px"></div>
+            <div class="footer">
+                <div class="webgl-logo"></div>
+                <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+            </div>
+        </div>
+
+        <p>  
+            HOW TO: WASD for the player on the left. Arrows for the player on the right. One of the bears can double jump, and the other has super speed.
+            <br><br>
+            DESCRIPTION: This game was a submission to the Beginners Circle Jam #3. I made it in two weeks. The premise is that two lovers have been separated and need to be reunited. Each level consists of progressively harder parkour. 
+            <br><br>
+            TOOLS: Unity C#, Piskel
+            <br><br>
+            LINKS: <a target = "_blank" href = "https://itch.io/jam/beginners-circle-jam-3/rate/784431">Itch.io Link</a> 
+        </p>
+    </div>
+</fieldset>
+
+<br>
+<fieldset>
+    <p></p>
+</fieldset>
+<br>
+
+</body>
+</html>
